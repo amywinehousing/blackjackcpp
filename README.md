@@ -7,5 +7,6 @@ g++ main.cpp -o main
 ```
 1. Betting system.
 2. Dealer insurance.
-3. Split and double down...
+3. Split and double down.
+4. Cards instead of numbers...
 ```
