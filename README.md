@@ -1,2 +1,11 @@
 # blackjackcpp
-A terminal blackjack game written on C++.
+*Build*
+```
+g++ main.cpp -o main
+```
+*Todo:*
+```
+1. Betting system.
+2. Dealer insurance.
+3. Split and double down...
+```
