@@ -45,6 +45,8 @@ int main() {
     const int POSSIBLECARDS = 21;
     int dealerCardVal = 0;
     int playerCardVal = 1;
+    int balance = 1000;
+    int currentBet;
     int dealerCard[POSSIBLECARDS]{};
     int playerCard[POSSIBLECARDS]{};
     char choice;
@@ -56,7 +58,7 @@ int main() {
         
         dealerCardVal = 0;
         playerCardVal = 1;
-        
+
         for (int i = 0; i <= dealerCardVal; i++) {
             tempDealerSum += dealerCard[i];
         }
@@ -64,6 +66,23 @@ int main() {
             tempPlayerSum += playerCard[i];
         }
         
+        cout << "[+] Balance: " << balance << endl;
+        cout << "[?] How much you wanna bet?: ";
+        cin >> currentBet;
+
+        if (currentBet <= 0) {
+            cout << "[-] Your bet should be above 0." << endl;
+            continue;
+        }
+
+
+        if (balance == 0) {
+            cout << "You lost!" << endl;
+            cin.ignore();
+            cin.get();
+            return 0;
+        }
+
         while (true) {
             cout << "[+] Dealer hand: ";
             for (int i = 0; i <= dealerCardVal; i++) {
@@ -82,18 +101,21 @@ int main() {
             if (tempPlayerSum > 21) {
 				std::this_thread::sleep_for(std::chrono::milliseconds(500));
                 cout << "[-] You busted! You lost!" << endl;
+                balance -= currentBet;
                 break;
             }
             
             if (tempPlayerSum == 21) {
 				std::this_thread::sleep_for(std::chrono::milliseconds(500));
                 cout << "[777] Blackjack!" << endl;
+                balance += currentBet * 2.5;
                 if (tempDealerSum == 21) {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     cout << "Push! Tie game." << endl;
                 } else {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     cout << "[+] You won!" << endl;
+                    balance += currentBet * 2;
                 }
                 break;
             }
@@ -111,7 +133,7 @@ int main() {
                 cout << "[+] Dealer's turn..." << endl;
 				std::this_thread::sleep_for(std::chrono::milliseconds(500));
                 for (int i = 0; i <= dealerCardVal; i++) {
-                    cout << dealerCard[i] << " ";
+                    cout << "[+] Current dealer's hand: " << dealerCard[i] << " ";
                 }
 				std::this_thread::sleep_for(std::chrono::seconds(2));
                 cout << endl;
@@ -129,14 +151,17 @@ int main() {
                 if (tempDealerSum > 21) {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     cout << "[+] Dealer busted! You won!" << endl;
+                    balance += currentBet * 2;
                 }
                 else if (tempDealerSum > tempPlayerSum) {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     cout << "[-] Dealer wins with " << tempDealerSum << " vs your " << tempPlayerSum << endl;
+                    balance -= currentBet;
                 }
                 else if (tempPlayerSum > tempDealerSum) {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     cout << "[+] You win with " << tempPlayerSum << " vs dealer's " << tempDealerSum << endl;
+                    balance += currentBet * 2;
                 }
                 else {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
