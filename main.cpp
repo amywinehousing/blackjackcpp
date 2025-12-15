@@ -70,8 +70,8 @@ int main() {
         cout << "[?] How much you wanna bet?: ";
         cin >> currentBet;
 
-        if (currentBet <= 0) {
-            cout << "[-] Your bet should be above 0." << endl;
+        if (currentBet <= 0 || currentBet > balance) {
+            cout << "[-] Invalid." << endl;
             continue;
         }
 
