@@ -24,7 +24,7 @@
 ⠀⠀⠀⠀⠀⠀⠀⡠⠋⣁⣴⣴⠾⠒⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣐⡵⠚⠂⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-				12:59 AM 14.12.2025⠀⠀⠀⠀⠀⠀⠀⠀
+				12:47 AM 16.12.2025⠀⠀⠀⠀⠀⠀⠀⠀
 */
 
 #include<iostream>
@@ -46,7 +46,7 @@ int main() {
     int dealerCardVal = 0;
     int playerCardVal = 1;
     int balance = 1000;
-    int currentBet;
+    int currentBet = 0;
     int dealerCard[POSSIBLECARDS]{};
     int playerCard[POSSIBLECARDS]{};
     char choice;
@@ -66,6 +66,7 @@ int main() {
             tempPlayerSum += playerCard[i];
         }
         
+        int currentBet = 0;
         cout << "[+] Balance: " << balance << endl;
         cout << "[?] How much you wanna bet?: ";
         cin >> currentBet;
