@@ -1,10 +1,8 @@
-/*
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡔⢹⠀⠀⠀⠀⠀⠀⠀⢀⠜⡇             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣷⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠁⣠⠶⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢿⣿⣿⢿⣿⣿⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⢲⡄⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⡜⠁⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀⠀⠉⣿⣿⣿⣯⣍⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠞⠁⠀⠀⢣⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⡜⠀⠀⢀⢠⠤⢄⣈⢳⡀⠀⠀⠀⠀⠀⠀⠀⢺⣿⠃⠈⠀⠀⠀⠀⠀⠀⠀⠀⣠⠋⠀⠀⠀⠀⠀⠈⡆⠀⠀⠀
-⠀⠀⠀⠀⠀⣸⠁⠀⡰⠛⣼⡀⠀⠀⠉⠛⣦⢄⡀⠀⠀⠀⠀⠘⠛⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠀⠀⠀⢰⡵⡿⡀⠀⢳⠀⠀⠀
+/*⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀  ⣠⠶⢤⡀⠀⠀⠀⠀⠀⠀              ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⢲⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡜⠁⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀⠀          ⠀⠀⠀⠀⠀⠀⠀⠀⡠⠞⠁⠀⠀⢣⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡜⠀⠀⢀⢠⠤⢄⣈⢳⡀⠀⠀⠀⠀⠀⠀⠀      ⠀⠀⠀⠀⠀⠀⠀⣠⠋⠀⠀⠀⠀⠀⠈⡆⠀⠀⠀
+⠀⠀⠀⠀⠀⣸⠁⠀⡰⠛⣼⡀⠀⠀⠉⠛⣦⢄⡀⠀⠀⠀⠀    ⠀⠀⠀⠀⠀⠀⠀⣠⠞⠀⠀⠀⢰⡵⡿⡀⠀⢳⠀⠀⠀
 ⠀⠀⠀⠀⢀⠇⠀⢠⠃⠀⠘⣇⠀⠀⠀⠀⠈⠀⠈⠑⠢⢄⡀⠀⠀⠀⠀⢰⠛⡶⠀⠀⡴⠁⠀⠀⠀⢠⠏⠀⢸⠃⠀⢸⠀⠀⠀
 ⠀⠀⠀⠀⡼⠀⠀⡌⠀⠀⠀⠘⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢄⣀⣴⠇⠀⣿⢀⠎⠀⠀⠀⠀⣰⠃⠀⠀⠀⡇⠀⢸⠀⠀⠀
 ⠀⠀⠀⢀⡇⠀⠀⡇⠀⠀⠀⠀⠘⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⠀⠈⠊⠉⠢⣄⠀⢠⠃⠀⠀⠀⠀⡇⠀⢸⠀⠀⠀
@@ -46,36 +44,31 @@
 ⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 				12:47 AM 16.12.2025⠀⠀⠀⠀⠀⠀⠀⠀
 */
-
+ 
 #include<iostream>
 #include<ctime>
 #include<chrono>
 #include<thread>
 using namespace std;
 
-void fillArray(int dealerCard[], int playerCard[], const int POSSIBLECARDS) {
+const int POSSIBLECARDS = 21;
+int dealerCardVal = 0;
+int playerCardVal = 1;
+int balance = 1000;
+int dealerCard[POSSIBLECARDS]{};
+int playerCard[POSSIBLECARDS]{};
+
+void fillArray() {
 	for (int i = 0; i < POSSIBLECARDS; i++) {
 		dealerCard[i] = rand() % 9 + 2;
 		playerCard[i] = rand() % 9 + 2;
 	}
 }
 
-int main() {
-    srand(time(NULL));
-    const int POSSIBLECARDS = 21;
-    int dealerCardVal = 0;
-    int playerCardVal = 1;
-    int balance = 1000;
-    int currentBet = 0;
-    int dealerCard[POSSIBLECARDS]{};
-    int playerCard[POSSIBLECARDS]{};
-    char choice;
-    
-    fillArray(dealerCard, playerCard, POSSIBLECARDS);
-    
-    while (true) {
+void game() {
+        char choice;
+        while (true) {
         int tempPlayerSum = 0, tempDealerSum = 0;
-        
         dealerCardVal = 0;
         playerCardVal = 1;
 
@@ -86,10 +79,16 @@ int main() {
             tempPlayerSum += playerCard[i];
         }
         
+        int insurance = 0;
         int currentBet = 0;
         cout << "[+] Balance: " << balance << endl;
         cout << "[?] How much you wanna bet?: ";
         cin >> currentBet;
+        cout << "[?] Take insurance?: ";
+        cin >> choice;
+        if (choice == 'y'|| choice == 'Y') {
+            insurance = 1;
+        }
 
         if (currentBet <= 0 || currentBet > balance) {
             cout << "[-] Invalid." << endl;
@@ -98,10 +97,9 @@ int main() {
 
 
         if (balance == 0) {
-            cout << "You lost!" << endl;
-            cin.ignore();
-            cin.get();
-            return 0;
+            cout << "[-] Youre broke.. But i will give you 500 bucks!" << endl;
+            balance += 500;
+            continue;
         }
 
         while (true) {
@@ -119,9 +117,14 @@ int main() {
             
             cout << "[?] Player sum: " << tempPlayerSum << endl;
             
+            if (insurance == 1) {
+                if (tempDealerSum + dealerCard[1] == 21) {
+                    cout << "[I] Dealer won with blackjack." << endl;
+                }
+            }
             if (tempPlayerSum > 21) {
 				std::this_thread::sleep_for(std::chrono::milliseconds(500));
-                cout << "[-] You busted! You lost!" << endl;
+                cout << "[-] Overdraw!" << endl;
                 balance -= currentBet;
                 break;
             }
@@ -129,10 +132,10 @@ int main() {
             if (tempPlayerSum == 21) {
 				std::this_thread::sleep_for(std::chrono::milliseconds(500));
                 cout << "[777] Blackjack!" << endl;
-                balance += currentBet * 2.5;
+                balance += currentBet * 2;
                 if (tempDealerSum == 21) {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
-                    cout << "Push! Tie game." << endl;
+                    cout << "[/] Push! Tie game." << endl;
                 } else {
 					std::this_thread::sleep_for(std::chrono::milliseconds(500));
                     cout << "[+] You won!" << endl;
@@ -141,7 +144,7 @@ int main() {
                 break;
             }
             
-            cout << "[?] Enter your next move (Hit - H, Stand - S, End the game - X): ";
+            cout << "[?] Enter your next move (Hit - H, Stand - S, Bet more - B End the game - X): ";
             cin >> choice;
             
             if (choice == 'H' || choice == 'h') {
@@ -149,6 +152,12 @@ int main() {
                 if (playerCardVal < POSSIBLECARDS) {
                     tempPlayerSum += playerCard[playerCardVal];
                 }
+            }
+            if (choice == 'B' || choice == 'b') {
+                int a;
+                cout << "[?] How much are we betting?: ";
+                cin >> a;
+                currentBet += a;
             }
             else if (choice == 'S' || choice == 's') {
                 cout << "[+] Dealer's turn..." << endl;
@@ -192,11 +201,7 @@ int main() {
             }
             else if (choice == 'X' || choice == 'x') {
                 cout << "[+] Game ended." << endl;
-                cin.ignore();
-                cin.get();
-                return 0;
             }
-            
             cout << endl;
         }
         
@@ -206,7 +211,15 @@ int main() {
             break;
         }
         
-        fillArray(dealerCard, playerCard, POSSIBLECARDS);
+        fillArray();
     }
+}
+
+int main() {
+    srand(time(NULL));
+    fillArray();
+    game();
+    cin.ignore();
+    cin.get();
     return 0;
 }
